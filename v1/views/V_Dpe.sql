@@ -32,7 +32,7 @@ SELECT
     tv016_departement_code AS id_dep
 FROM
     OPENROWSET(
-        BULK 'DatalakeRenovation/dpe-france.csv',
+        BULK 'files/dpe-france.csv',
         DATA_SOURCE = 'root',
         FORMAT = 'CSV',
         FIELDTERMINATOR = ',',

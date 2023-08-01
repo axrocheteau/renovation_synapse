@@ -10,7 +10,7 @@ SELECT
     SUPERFICIE_TERRAIN
 FROM
     OPENROWSET(
-        BULK 'detruire/permis_demolir.csv',
+        BULK 'destruction/permis_demolir.csv',
         DATA_SOURCE = 'licence',
         FORMAT = 'CSV',
         FIELDTERMINATOR = ';',

@@ -16,7 +16,7 @@ SELECT
         END AS consumption_by_residence
 FROM
     OPENROWSET(
-        BULK 'DatalakeRenovation/elec.csv',
+        BULK 'files/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-commune (1).csv',
         DATA_SOURCE = 'root',
         FORMAT = 'CSV',
         FIELDTERMINATOR = ';',

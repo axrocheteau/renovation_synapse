@@ -17,7 +17,7 @@ SELECT
     SURF_HAB_CREEE
 FROM
     OPENROWSET(
-        BULK 'construire/*.csv',
+        BULK 'construction/*.csv',
         DATA_SOURCE = 'licence',
         FORMAT = 'CSV',
         FIELDTERMINATOR = ';',

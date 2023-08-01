@@ -17,7 +17,8 @@ SELECT
     YEAR(Date) as year
 FROM
     OPENROWSET(
-        BULK 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/DatalakeRenovation/donnees-synop-essentielles-omm.csv',
+        BULK 'files/donnees-synop-essentielles-omm.csv',
+        DATA_SOURCE = 'root',
         FORMAT = 'CSV',
         PARSER_VERSION = '2.0',
         FIELDTERMINATOR = ';',

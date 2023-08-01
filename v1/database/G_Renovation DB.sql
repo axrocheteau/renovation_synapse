@@ -1,31 +1,22 @@
-CREATE DATABASE Renovation
-COLLATE Latin1_General_100_BIN2_UTF8;
-GO;
-
-Use Renovation;
+Use Renovation_silver;
 GO;
 
 CREATE EXTERNAL DATA SOURCE licence WITH (
-    LOCATION = 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/DatalakeRenovation/permis/'
+    LOCATION = 'https://datalakerenov.dfs.core.windows.net/storage/files/licence/'
 );
 GO;
 
 CREATE EXTERNAL DATA SOURCE tremi WITH (
-    LOCATION = 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/DatalakeRenovation/tremi/'
+    LOCATION = 'https://datalakerenov.dfs.core.windows.net/storage/files/tremi/'
 );
 GO;
 
 CREATE EXTERNAL DATA SOURCE pop WITH (
-    LOCATION = 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/DatalakeRenovation/population/'
-);
-GO;
-
-CREATE EXTERNAL DATA SOURCE carto WITH (
-    LOCATION = 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/DatalakeRenovation/cartographie/'
+    LOCATION = 'https://datalakerenov.dfs.core.windows.net/storage/files/pop/'
 );
 GO;
 
 CREATE EXTERNAL DATA SOURCE root WITH (
-    LOCATION = 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/'
+    LOCATION = 'https://datalakerenov.dfs.core.windows.net/storage/'
 );
 GO;

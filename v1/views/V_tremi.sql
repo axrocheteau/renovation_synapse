@@ -9,7 +9,7 @@ SELECT
         END AS cd_postal_corrected
 FROM
     OPENROWSET(
-        BULK '*.csv',
+        BULK 'TREMI_2017-Résultats enquête bruts.csv',
         DATA_SOURCE = 'tremi',
         FORMAT = 'CSV',
         FIELDTERMINATOR = ';',

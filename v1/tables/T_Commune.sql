@@ -112,7 +112,7 @@ FROM
             Code_postal as code_postal
         FROM
             OPENROWSET(
-            BULK 'DatalakeRenovation/code_commune.csv',
+            BULK 'files/code_commune.csv',
             DATA_SOURCE = 'root',
             FORMAT = 'CSV',
             FIELDTERMINATOR = ';',

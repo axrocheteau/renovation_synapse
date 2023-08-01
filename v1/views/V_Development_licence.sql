@@ -12,7 +12,7 @@ SELECT
     SUPERFICIE_TERRAIN
 FROM
     OPENROWSET(
-        BULK 'amenagement/permis_amenager.csv',
+        BULK 'development/permis_amenager.csv',
         DATA_SOURCE = 'licence',
         FORMAT = 'CSV',
         FIELDTERMINATOR = ';',

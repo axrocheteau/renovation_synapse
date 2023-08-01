@@ -1,8 +1,12 @@
-Use Renovation;
+CREATE DATABASE Renovation_silver
+COLLATE Latin1_General_100_BIN2_UTF8;
+GO;
+
+Use Renovation_silver;
 GO;
 
 CREATE EXTERNAL DATA SOURCE relationalDB WITH (
-    LOCATION = 'https://renovationstockage.dfs.core.windows.net/sysfilesrenovation/relationalDB/'
+    LOCATION = 'https://datalakerenov.dfs.core.windows.net/storage/relationalDB/'
 );
 GO;
 
